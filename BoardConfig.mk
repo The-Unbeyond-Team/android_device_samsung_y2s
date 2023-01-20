@@ -121,6 +121,10 @@ TW_INCLUDE_CRYPTO_FBE := false
 TW_INCLUDE_FBE_METADATA_DECRYPT := false
 BOARD_USES_METADATA_PARTITION := true
 
+# info
+DEVICE_CODENAME := y2s
+DEVICE_PATH := device/samsung/$(DEVICE_CODENAME)
+
 # TWRP specific build flags
 TW_DEVICE_VERSION := 1_UnbeyondTeam
 TW_THEME := portrait_hdpi
@@ -144,3 +148,7 @@ TW_NO_LEGACY_PROPS := true
 TW_NO_BIND_SYSTEM := true
 TWRP_INCLUDE_LOGCAT := true
 TW_USE_SAMSUNG_HAPTICS := true
+
+#PBRP
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_TORCH_PATH := "/sys/devices/virtual/camera/flash/rear_flash"
